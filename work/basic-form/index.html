@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="homepage">
+      <h2>Welcome to the Home Page. </h2>
+      <div class="local_menu">
+        <ul class="menu">
+          <li><a href=" ">Home Page</a ></li>
+          <li><a href="group">Group</a ></li>
+          <li><a href="users_info">User Infomation</a ></li>
+        </ul>
+      </div>
+    </div>
+    <p>Please fill your information to let us know you more!</p >
+    <div class="menu_bar">
+      <form action="/some/url/" method="POST">
+        <label>Name: </label>
+        <input type="text" name="name" required>
+        <label>Email: </label>
+        <input type="text" name="email" required>
+        <div>
+          <input type="checkbox" name="annoy_me">
+          <label>Do you want us to send you annoying emails?</label>
+        </div>
+        <select class="tier" required>
+          <option value="">Please select</option>
+          <option value="1">Silver Tier</option>
+          <option value="2">Gold Tier</option>
+          <option value="3">Platinum Tier</option>
+        </select>
+        <button type="button"> Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

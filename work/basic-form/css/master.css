@@ -1,0 +1,48 @@
+#homepage{
+  display: grid;
+}
+
+body{
+  height: 100%;
+  margin: 1;
+  background-image: url('background.jpg');
+}
+
+h2, p{
+  text-align: center;
+}
+
+p{
+  margin: 2rem;
+}
+
+.local_menu{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.menu a {
+  padding: 1rem;
+
+}
+
+.menu a:hover{
+  background: peru;
+  color: white;
+}
+
+.menu_bar {
+  margin: auto;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+}
+
+select:invalid {
+  box-shadow: 0 0 1px 1px red;
+}
+
+form{
+  display: grid;
+}

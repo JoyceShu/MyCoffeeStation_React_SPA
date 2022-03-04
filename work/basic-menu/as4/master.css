@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
+    margin: 1rem;
+    height: 700px;
+    font-family: sans-serif;
+    grid-template-areas:
+    "header header"
+    "localnav main"
+    "footer footer";
+
+}
+
+main {
+    grid-area: main;
+    padding: 1.5rem;
+    background-color: #FFEDED;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #F3F1F5;
+}
+
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "logo header"
+    "logo subheader"
+    "logo menubar";
+}
+
+header ul {
+    padding: 0.5rem;
+    margin: 0;
+    list-style-type: none;
+}
+
+header .logo {
+    grid-area: logo;
+    width: 12rem;
+    height: auto;
+}
+
+header h1 {
+    grid-area: header;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+header .sub_header {
+    grid-area: subheader;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.menu_bar {
+    grid-area: menubar;
+}
+
+.menu_bar > ul {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+}
+
+.menu > li{
+   padding: 0 1rem;
+   width: 100%;
+   position: relative;
+   border-style:groove;
+}
+
+.sub_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    background-color: #FEFBF3;
+    transition: max-height 1s;
+}
+
+.sub_menu a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+}
+
+.sub_menu a:hover {
+    background-color: purple;
+}
+
+.menu button {
+    background-color: transparent;
+    border: 0;
+    font: inherit;
+}
+
+.menu > li:focus-within .sub_menu,
+.menu > li:hover .sub_menu {
+    max-height: 100vh;
+    visibility: visible;
+}
+
+.localnav {
+    grid-area: localnav;
+    display: flex;
+    width: 12rem;
+    background-color: #FEFBF3;
+
+}
+
+.localnav ul {
+    flex-direction: column;
+    padding: 0.5rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.localnav li {
+    padding: 1rem 0;
+}
+
+.localnav li:hover {
+    width: 12rem;
+    background-color:  #F3F1F5;
+}
+.localnav a {
+    text-decoration: none;
+}

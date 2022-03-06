@@ -1,6 +1,6 @@
 # React Intro Assignment
 
-** Due Mon Mar 7 11:59pm PT **
+** Due Mon Mar 22 11:59pm PT **
 
 ## Goal
 
@@ -33,6 +33,7 @@ Your App component:
   - which adds 5 to the count
 - does not allow you to decrease the count below 0
   - hint: put a `disabled={!count}` prop on the button 
+  - Remember: HTML `disabled` should not take a value and doesn't understand true/false, but JSX props must take a value, understand all type, not just strings, and will translate to the appropriate HTML
 - Pressing the Reorder button sets the inventory count to 5
 
 ## Visual Requirements

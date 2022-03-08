@@ -1,0 +1,53 @@
+#homepage {
+    display: grid;
+
+}
+
+ body{
+   background-color: #EFDAD7;
+ }
+
+h1, h2, p{
+    text-align: center;
+    color: #655D8A;
+}
+
+p {
+    margin: 2rem;
+}
+
+.navi-menu {
+    margin-top: 7rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.navi-menu a:hover {
+    background-color:#655D8A;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.menubar {
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid  black;
+    border-radius: 1rem;
+}
+
+input:invalid {
+    box-shadow:0 0 1px 1px purple;
+}
+
+select:invalid {
+    box-shadow:0 0 1px 1px purple;
+}
+
+form {
+    display: grid;
+}

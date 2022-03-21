@@ -1,0 +1,60 @@
+#homepage{
+  display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header header"
+    "localmenu main"
+    "footer footer";
+
+}
+header {
+    grid-area: header;
+    background-color: plum;
+}
+
+.menubar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.local-menu {
+    grid-area: localmenu;
+    border-right: 1px solid black;
+    background-color: pink;
+}
+
+.local-menu ul {
+    list-style-type: none;
+}
+
+.local-menu li {
+    padding: 1rem;
+}
+
+main {
+    grid-area: main;
+    background-color: pink;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: plum;
+    padding: 1rem;
+}
+
+.menu a {
+    padding: 1rem;
+}
+
+.local-menu li:hover {
+    background-color: plum;
+}
+
+.menu a:hover {
+    background-color: rebeccapurple;
+    color: white;
+
+}

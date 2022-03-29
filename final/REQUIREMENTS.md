@@ -56,7 +56,7 @@
 - All interactions must be able to be done with keyboard, in addition to any mouse support
 - You should use appropriate ARIA roles from class to provide improved functionality when the semantic HTML elements are insufficient
   - Hint: remember that most roles are automatically provided by the appropriate semantic HTML elements.  Having an aria role should be rare.
-- You should use the following aria states and properties where appropriate (and ONLY where appropriate - the use of these is not required unless your UI creates the need, and I expect most projects will not have any of these):
+- You should use the following aria states and properties where appropriate (and ONLY where appropriate - the use of these is not required unless your UI creates the need, and I expect most projects will NOT have any of these):
   - aria-hidden
   - aria-expanded
   - aria-modal
